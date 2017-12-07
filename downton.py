@@ -28,7 +28,7 @@ def post_data():
 		print 'OK IT IS HERE!'
 		return 'OK!'
 		payload = {'url':surl, 'name':name }
-		jon = json.dumps(payload)
+		jon = json.dumps(payload)	#JSONify the continer
 		response = requests.post('YOUR CLIENT ADDRESS HERE', data = jon)
 		print(response.text) #TEXT/HTML
 		print(response.status_code, response.reason) #HTTP
